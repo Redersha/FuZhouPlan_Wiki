@@ -10,7 +10,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '设定', link: '/settings/' ,activeMatch: '/settings/'},
-      { text: '游戏性内容', link: '/gaming/index' }
+      { text: '游戏性内容', link: '/gaming/items/syringe' }
     ],
 
     sidebar: {
@@ -27,12 +27,37 @@ export default defineConfig({
           ]
         }
       ],
-      'gaming': [
+      '/gaming/': [
         {
           text: '游戏性内容',
-          link: '/gaming/',
           items: [
-
+            {
+              text: '方块',
+              items: [
+                { text: '蓝浆果丛', link: '/gaming/blocks/blue_berry_bush' },
+                { text: '发光蓝染料方块', link: '/gaming/blocks/glowing_blue_dye' },
+                { text: '绿浆果丛', link: '/gaming/blocks/green_berry_bush' },
+              ]
+            },
+            {
+              text: '物品', 
+              items: [
+                { text: '氨水瓶', link: '/gaming/items/ammonia_bottle' },
+                { text: '蓝浆果', link: '/gaming/items/blue_berry' },
+                { text: '蒸馏水', link: '/gaming/items/distilled_water' },
+                { text: '乙二胺', link: '/gaming/items/ethylenediamine' },
+                { text: '发光蓝染料', link: '/gaming/items/glowing_blue_dye' },
+                { text: '发光蓝染料桶', link: '/gaming/items/glowing_blue_dye_bucket' },
+                { text: '绿浆果', link: '/gaming/items/green_berry' },
+                { text: '铁罐', link: '/gaming/items/iron_can' },
+                { text: '生物麻醉剂', link: '/gaming/items/item.fuzhouplan.bio_anesthetic' },
+                { text: '石灰粉', link: '/gaming/items/lime_powder' },
+                { text: '无核酸水', link: '/gaming/items/nuclease_free_water' },
+                { text: '针管', link: '/gaming/items/syringe' },
+                { text: 'Tris 糊糊', link: '/gaming/items/tris_paste' },
+                { text: '醋瓶', link: '/gaming/items/vinegar_bottle' },
+              ]
+            }
           ]
         }
       ]
