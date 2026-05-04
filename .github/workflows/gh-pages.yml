@@ -29,12 +29,12 @@ jobs:
         run: npm install  # 或 pnpm install / yarn install
 
       - name: Build VitePress
-        run: npm run docs:build  # 执行构建命令
+        run: npm run build  # 执行构建命令
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vitepress/dist  # 构建产物的默认输出路径
+          path: docs/.vitepress/dist  # 构建产物的默认输出路径
 
   deploy:
     environment:
