@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "FuZhouPlan Wiki",
+  base: '/FuZhouPlan_Wiki/',
   description: "FuZhouPlan_Wiki",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
