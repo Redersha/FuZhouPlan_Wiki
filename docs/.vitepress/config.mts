@@ -9,7 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '设定', link: '/settings/' ,activeMatch: '/settings/'},
+      { text: '设定', link: '/settings/' ,activeMatch: '/settings/beginning'},
       { text: '游戏性内容', link: '/gaming/blocks/blue_berry_bush' ,activeMatch: '/gaming/'},
     ],
     search: {
