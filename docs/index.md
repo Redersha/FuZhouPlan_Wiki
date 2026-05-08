@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "浮舟计划"
-  text: <mark>JE Forge 1.20.1</mark>
-  tagline: 科幻硬核模组，主要玩法为生物科技，设定融合诺亚方舟与未来
+  text: Java Edition Forge 1.20.1
+  tagline: 科幻硬核模组，主要玩法为生物科技，设定融合诺亚方舟与未来。
   actions:
     - theme: brand
       text: 在 Modrinth 下载
@@ -28,7 +28,7 @@ features:
 ---
 
 ::: tip
- ... 一颗被悄然操控的流浪星球将撞向月球，而月球上的叛逃者正试图将这场毁灭，变成人类向深空逃亡的唯一弹射窗口 ...
+ 一颗流浪的星球将撞向月球，而月球上的叛逃者正试图将这场毁灭，变成人类向深空逃亡的唯一弹射窗口 ...
 :::
 
 ## 加入我们
