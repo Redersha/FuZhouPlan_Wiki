@@ -1,0 +1,40 @@
+
+/* 方案一：亮色橙红（推荐，对比度较好） */
+:root {
+  --vp-c-brand-1: #e23c00; /* 主色 */
+  --vp-c-brand-2: #ff5719; /* 高亮/悬浮 */
+  --vp-c-brand-3: #ff7340; /* 激活/深色 */
+  --vp-c-brand-soft: rgba(255, 115, 64, 0.14); /* 柔和背景 */
+  
+  /* 新增：<mark> 高亮样式 - 亮色模式 */
+  --vp-mark-bg-light: var(--vp-c-brand-1); /* 使用你的品牌主色作为背景 */
+  --vp-mark-color-light: #ffffff; /* 字体白色 */
+}
+
+/* 方案二：深色橙红（适合暗黑模式搭配） */
+.dark {
+  --vp-c-brand-1: #ff5719;
+  --vp-c-brand-2: #f65920;
+  --vp-c-brand-3: #e7501a;
+  
+  /* 新增：<mark> 高亮样式 - 暗黑模式 */
+  --vp-mark-bg-dark: var(--vp-c-brand-2); /* 使用品牌高亮色作为背景 */
+  --vp-mark-color-dark: #ffffff; /* 字体白色 */
+}
+
+/* 应用 <mark> 标签样式 */
+.vp-doc mark {
+  background-color: var(--vp-mark-bg-light, #e23c00);
+  color: var(--vp-mark-color-light, #ffffff);
+  border-radius: 4px;
+  padding: 0.1em 0.3em;
+  font-weight: 500;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* 暗黑模式适配 */
+.dark .vp-doc mark {
+  background-color: var(--vp-mark-bg-dark, #ff5719);
+  color: var(--vp-mark-color-dark, #ffffff);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
