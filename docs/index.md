@@ -11,8 +11,8 @@ hero:
       text: 在 Modrinth 下载
       link: https://modrinth.com/mod/fuzhouplan#download
     - theme: alt
-      text: 本站结构
-      link: /structure
+      text: README
+      link: /README
     - theme: alt
       text: 背景设定：起因
       link: /settings/beginning
@@ -27,14 +27,6 @@ features:
   
 ---
 
-::: tip
- 一颗流浪的星球将撞向月球，而月球上的叛逃者正试图将这场毁灭，变成人类向深空逃亡的唯一弹射窗口 ...
+::: tip 
+一颗流浪的星球将撞向月球，而月球上的叛逃者正试图将这场毁灭，变成人类向深空逃亡的唯一弹射窗口 ...
 :::
-
-## 加入我们
-加入我们，与我们协同开发。
-请填写表单（问卷）: https://forms.office.com/r/sqq0TchfvL
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/chart?repos=cenmix/FuZhouPlan&type=date&legend=top-left)](https://www.star-history.com/?repos=cenmix%2FFuZhouPlan&type=date&legend=top-left)

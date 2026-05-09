@@ -5,6 +5,16 @@ export default defineConfig({
   base: '/FuZhouPlan_Wiki/',
   description: "FuZhouPlan_Wiki",
   themeConfig: {
+    footer: {
+      // 信息栏（支持 HTML）
+      message: '本文档采用 MIT License 许可协议。',
+      // 版权栏（支持 HTML）
+      copyright: 'Copyright © 2026-至今 <strong>Redersha</strong>'
+    },
+    outline: {
+      level: [2, 4], // 显示 h2 到 h4 标题
+      label: '本页目录' // 可选：自定义标题文字
+    },
     nav: [
       { text: '首页', link: '/' },
       { text: '设定', link: '/settings/beginning', activeMatch: '/settings/' },
@@ -62,7 +72,6 @@ export default defineConfig({
       '/gaming/': [
         {
           text: '游戏性内容',
-          collapsed: false,  // 设为 false 表示默认展开
           items: [
             { 
               text: '方块',
