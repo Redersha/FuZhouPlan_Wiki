@@ -1,9 +1,15 @@
 import { defineConfig } from 'vitepress'
+import { mermaidMarkdown } from './theme/plugins/mermaidMarkdown'
 
 export default defineConfig({
   title: "FuZhouPlan Wiki",
   base: '/FuZhouPlan_Wiki/',
   description: "FuZhouPlan_Wiki",
+  markdown: {
+    config: (md) => {
+      mermaidMarkdown(md)
+    }
+  },
   themeConfig: {
     footer: {
       // 信息栏（支持 HTML）
@@ -122,7 +128,14 @@ export default defineConfig({
                 { text: 'Tris 糊糊', link: '/gaming/items/tris_paste' },
                 { text: '醋瓶', link: '/gaming/items/vinegar_bottle' },
               ]
-            }
+            },
+            { 
+              text: '工业产线',
+              collapsed: true,  // 设为 true 表示默认折叠
+              items: [
+                { text: '光刻产线 - 晶圆与芯片', link: 'gaming/production_lines/photolithography'}
+              ]
+            },
           ]
         }
       ],

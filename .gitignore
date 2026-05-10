@@ -1,7 +1,11 @@
 # Dependencies
 node_modules/
 
-# docs/.vitepress/dist/
+# VitePress generated files
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+docs/.vitepress/.temp/
+
 # Logs
 *.log
 
