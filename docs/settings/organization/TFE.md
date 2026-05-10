@@ -1,4 +1,4 @@
-# 组织/势力 - TFE - 全域框架执法公司
+# 设定/组织/势力 - TFE - 全域框架执法公司
 Total Framework Enforcement, Inc.（全域框架执法公司，市场通称 TFE）
 
 ## 简要总结

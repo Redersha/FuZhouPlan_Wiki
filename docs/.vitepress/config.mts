@@ -17,8 +17,8 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '设定', link: '/settings/beginning', activeMatch: '/settings/' },
-      { text: '游戏性内容', link: '/gaming/blocks/functional_blocks/industry/dryer', activeMatch: '/gaming/' },
+      { text: '设定', link: '/settings/', activeMatch: '/settings/' },
+      { text: '游戏性内容', link: '/gaming/', activeMatch: '/gaming/' },
     ],
     
     search: {
@@ -56,8 +56,8 @@ export default defineConfig({
     sidebar: {
       '/settings/': [
         {
+          text: '设定',
           items: [
-            { text: '事件起因', link: '/settings/beginning' },
             { 
               text: '组织/势力',
               collapsed: true,  // 设为 true 表示默认折叠
@@ -65,7 +65,13 @@ export default defineConfig({
                 { text: '全域框架执法公司', link: '/settings/organization/TFE' },
               ]
             },
-          ]
+            { text: '社会背景',
+              collapsed: true,
+              items: [
+                { text: '基于蒸汽生活的人们', link: '/settings/societies/steam_based_life_people' },
+              ]
+            },
+          ]          
         }
       ],
       
